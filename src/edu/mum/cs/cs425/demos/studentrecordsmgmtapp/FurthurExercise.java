@@ -8,12 +8,12 @@ public class FurthurExercise {
 	}
 	public static void printHelloWorld(int[] arr) {
 		for(int num: arr) {
-			if(num % 5 == 0)
+			if(num % 5 == 0 && num % 7 == 0)
+				System.out.println("HelloWorld");
+			else if(num % 5 == 0)
 				System.out.println("World");
 			else if(num % 7 == 0)
 				System.out.println("Hello");
-			else if(num % 5 == 0 && num % 7 == 0)
-				System.out.println("HelloWorld");
 		}
 	}
 	public static int findSecondBiggest(int[] arr) {
