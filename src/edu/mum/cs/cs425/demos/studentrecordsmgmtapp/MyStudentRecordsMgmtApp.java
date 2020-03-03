@@ -1,6 +1,7 @@
 package edu.mum.cs.cs425.demos.studentrecordsmgmtapp;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -28,8 +29,7 @@ public class MyStudentRecordsMgmtApp {
 	}
 	public static List<Student> getListOfPlatinumAlumniStudents(List<Student> list){
 		return list.stream()
-				.filter(x -> (LocalDate.now().getYear() 
-						- x.getDateOfAdmission().getYear() >= 30))
+				.filter(x -> Period.between(x.getDateOfAdmission(), LocalDate.now()).getYears() >= 30)
 				.sorted(Comparator.comparing((Student s) -> s.getDateOfAdmission()).reversed())
 				.collect(Collectors.toList());
 	}
