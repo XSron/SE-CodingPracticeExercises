@@ -1,4 +1,4 @@
-package edu.mum.cs.cs425.demos.studentrecordsmgmtapp;
+package edu.mum.cs.cs425.demos.studentrecordsmgmtapp.furthurexercises;
 
 public class FurthurExercise {
 	public static void main(String[] args) {

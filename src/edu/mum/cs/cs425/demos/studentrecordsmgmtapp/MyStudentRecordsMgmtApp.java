@@ -7,6 +7,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import edu.mum.cs.cs425.demos.studentrecordsmgmtapp.model.Student;
+
 public class MyStudentRecordsMgmtApp {
 	public static void main(String[] args) {
 		Student s1 = new Student(110001, "Dave", LocalDate.of(1951, 11, 28));
